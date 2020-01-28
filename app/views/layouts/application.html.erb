@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Psysens16</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cabinet de psychothérapie Caroline Delaunay - Paris 16ème</title>
+    <link rel="manifest" href="/manifest.json">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cabinet de Psychothérapie Caroline Delaunay-Paris 16eme" />
+    <meta property="og:description" content="Stress, peurs, rupture, angoisse, burn-out, manque de confiance de soi ,timidité..Parlons-en…Osez demander de l’Aide: Psychothérapie Caroline Delaunay" />
+    <meta property="og:url" content="http://psy-sens16.fr/" />
+    <meta property="og:site_name" content="Caroline Delaunay Psychothérapie Paris 16" />
+    <meta property="og:image" content="http://psy-sens16.fr/wp-content/uploads/2017/09/47487567_ItHgkWSqDYXovd3saSIjGhTW8EJByNzCHb8CcuU3mjA.jpg" />
+    <meta property="og:image:width" content="960" />
+    <meta property="og:image:height" content="720" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="Stress, peurs, rupture, angoisse, burn-out, manque de confiance de soi ,timidité..Parlons-en…Osez demander de l’Aide: Psychothérapie Caroline Delaunay" />
+    <meta name="twitter:title" content="Cabinet de Psychothérapie Caroline Delaunay-Paris 16eme" />
+    <meta name="twitter:image" content="http://psy-sens16.fr/wp-content/uploads/2017/09/47487567_ItHgkWSqDYXovd3saSIjGhTW8EJByNzCHb8CcuU3mjA.jpg" />
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <%= render 'shared/navbar' %>
     <%= yield %>
   </body>
 </html>
